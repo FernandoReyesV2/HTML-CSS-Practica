@@ -1,0 +1,176 @@
+div .logo {
+  background-color: var(--second-color);
+  width: 100%;
+  margin-left: 0px;
+  padding-bottom: 4px;
+}
+.icon {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  /* font-weight: 900; */
+  color: var(--text-color);
+  margin-left: 5px;
+}
+.logo img {
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 120px;
+}
+
+.nombre {
+  margin-left: 5px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.topnav #myLinks {
+  text-align: right;
+  padding-top: 0px;
+  margin-right: 120px;
+  margin-top: -41px;
+  font-size: 20px;
+}
+div a {
+  padding: 10px;
+  /* display: block; */
+}
+
+.topnav a {
+  color: white;
+  /* display: block; */
+}
+/* CUERPO DEL COSO ESTE */
+.introduccion {
+  width: 100%;
+}
+
+.introduccion #titulo {
+  color: var(--text-color);
+  text-align: left;
+}
+
+.introduccion #parrafo {
+  color: var(--text-color);
+  text-align: left;
+  display: flex;
+  max-width: 500px;
+}
+
+.introduccion #imagen {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 300px;
+}
+
+/*! media querys */
+/* en dispositivos de 0 a 760px se aplican estos estilos*/
+@media (max-width: 1000px) {
+  .topnav #myLinks {
+    margin-right: 60px;
+  }
+
+  .logo img {
+    margin-left: 60px;
+  }
+}
+/*! media querys */
+/* en dispositivos de 0 a 760px se aplican estos estilos*/
+@media (max-width: 780px) {
+  div .nombre {
+    display: none;
+  }
+
+  div .logo {
+    background-color: var(--second-color);
+  }
+  /* PRUEBA PARA IMAGEN */
+  .logo img {
+    /* display: none; */
+  }
+  img {
+    /* display: none; */
+  }
+  /* FIN  PURBEEA */
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: var(--main-color);
+    position: relative;
+  }
+  div a {
+    text-align: center;
+    /* height: 100%; */
+    /* width: 100%; */
+  }
+  div #myLinks {
+    width: 100%;
+    /* height: 100%; */
+  }
+  .nombre {
+    /* background-color: red; */
+    margin-left: 10px;
+  }
+  /* MENU DESPEGABLE] */
+  .topnav #myLinks {
+    display: none;
+    margin-top: 0px;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: var(--main-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    display: block;
+  }
+
+  /* CUERPO DEL COSO ESTE */
+  .introduccion {
+    /* width: 100%; */
+  }
+  div #parrafo{
+    display: flex;
+  }
+  .introduccion #titulo {
+    color: var(--text-color);
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .introduccion #parrafo {
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  .introduccion #imagen {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}

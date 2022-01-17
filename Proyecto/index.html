@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--* Informacion para los buscadores:SEO(conjuto de tecnicas que optimiza los motores de busqueda)-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniel Vera Paredes" />
+    <meta name="description" content="Portafolio web" />
+    <!--* Es la ventana que define el area de la pantalla que se esta viendo dentro del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--* Establece un vínculo con otro recurso -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/introduccion.css">
+    <!--? relaciona un archivo js -->
+    <script defer src="./js/main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Proyecto</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <div href="#" class="logo">
+          <img
+            width="50"
+            height="50"
+            src="./IMG/Pato.png"
+            alt="No se encuentra el logo de Javascript"
+          />
+          </div>
+          <div class="nombre">Fernando Reyes</div>
+        <div id="myLinks">
+          <a href="#Perfil">Perfil</a>
+          <a href="#Experiencia">Experiencia</a>
+          <a href="#Habilidades">Habilidades</a>
+          <a href="#Cursos">Cursos</a>
+          <a href="#Contacto">Contacto</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    </header>
+    <main>
+      <section class="sintaxis">
+        <div class="introduccion">
+          <div id="titulo"><h2>Hola, soy <br> 
+          Fernando Reyes</h2></div>
+          <div id="parrafo">
+          <p>Soy un docente apasionadop por la enseñanza del desarrollo de softwaree, con mas de 29 años de experiencia en varios lenguajees de programacion de escritorio y con mas de 5 años de experiencia en las tecnologias y desarrollo web</p>
+        </div>
+        <div id="imagen">
+          <img class="fotoMia" src="./IMG/Pato.png" alt="foto mia"></div>
+      </section>
+      </div>
+      <section>
+        <div class="hero__wave" style="overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff"
+          ></path>
+          </svg>
+      </div>
+      </section>
+
+    </main>
+  </body>
+</html>

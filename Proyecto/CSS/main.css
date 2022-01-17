@@ -1,0 +1,79 @@
+/*! declaracion de variabls globales */
+:root {
+  --main-font: Arial;
+  --font-size: 16px;
+  --main-color: #222222;
+  --second-color: #404261;
+  --text-color: #fff;
+  --text-color-inverse: #222;
+  --container-width: 1200px;
+}
+/*! reseteo de estilos  */
+html {
+  box-sizing: border-box; /** tamaño de la caja */
+  font-family: var(--main-color);
+  font-size: var(--font-size);
+  scroll-behavior: smooth; /** aplica una transiccion no subita eal cambiar de seccion */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /** todos los elementos hereden el box-sizing: */
+}
+
+body {
+  margin: 0;
+  box-sizing: inherit;
+  font-size: inherit;
+  overflow-x: hidden;
+  background-color: var(--main-color);
+}
+main {
+  margin-top: 50px;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color-inverse);
+}
+li {
+  list-style-type: none;
+  color: var(--text-color-inverse);
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+
+.sintaxis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--container-width);
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.js {
+  width: 760px;
+  max-width: 100%;
+  min-width: 240px;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  box-shadow: 0px 5px 16px 0px var(--text-color-inverse);
+  overflow: hidden;
+  color: var(--text-color-inverse);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+code span {
+  color: rgb(33, 122, 182);
+  font-weight: 900;
+}
